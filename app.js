@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
 
-// Get Request
+// required Routes File
+const {getPosts}= require('./routes/post')
 
-app.get('/', (req, res) => {
-  res.send('hello from simple server  \u{1F60D}');
-});
+app.get('/',getPosts);
 
 
 const port = 8080;
