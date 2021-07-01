@@ -1,0 +1,27 @@
+{
+  "name": "react-social-site",
+  "version": "1.0.0",
+  "description": "A Node Js Api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhijitdevs/node-react-social-site.git"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "Codedevloper13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhijitdevs/node-react-social-site/issues"
+  },
+  "homepage": "https://github.com/abhijitdevs/node-react-social-site#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9"
+  }
+}
