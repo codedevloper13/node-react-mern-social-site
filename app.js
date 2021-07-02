@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
+const morgan= require('morgan');
 
 // required Routes File
 const {getPosts}= require('./routes/post')
 
+/* Middleware Setup */
+app.use(morgan)
+// Routes 
 app.get('/',getPosts);
 
 
