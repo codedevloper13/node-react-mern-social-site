@@ -1,0 +1,5 @@
+mongodb+srv://codedevloper13:<mern_stack>@cluster0.j9n7q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+username:: codedevloper13
+password:: mern_stack
+database :: mern_stack_social_site

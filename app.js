@@ -1,17 +1,18 @@
 const express = require('express');
 const app = express();
-const morgan= require('morgan');
-
+const morgan = require('morgan');
+const dotenv = require('dotenv');
+// dor env initialize.
+dotenv.config();
 // required Routes File
-const postRoutes= require('./routes/post')
+const postRoutes = require('./routes/post');
 
 /* Middleware Setup */
-app.use(morgan)
-// Routes 
-app.use('/',postRoutes);
+app.use(morgan('dev'));
+// Routes
+app.use('/', postRoutes);
 
-
-const port = 8080;
+const port = process.env.PORT || 8083;
 app.listen(port, () => {
   console.log(`Node js Running on port ${port}`);
 });
